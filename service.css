@@ -1,0 +1,33 @@
+.srv{
+   background: url(images/coding.jpg);
+   background-color: #cccccc;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+h3, p {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50, -50%);
+  
+}
+ h3{
+   color: wheat;
+   box-shadow: 0 3px 2px 0 rgb(0, 0, 0);
+   }
+ 
+ p {
+   color: whitesmoke;
+   position: absolute;
+   top: 4rem;
+   box-shadow: 0 3px 2px 0 rgb(0, 0, 0);
+   padding: 0.8rem;
+ }
+
+ 
+
+
+

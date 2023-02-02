@@ -1,0 +1,28 @@
+.main-grid{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+  place-items: center;
+  
+}
+
+.ch {
+  background-color: #222546;
+  height: 8rem;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0px rgba(67, 71, 67, 1);
+  transition: width 2s, height 2s, transform 2s;
+  cursor: pointer;
+}
+
+  .ch:hover {
+  width: 20rem;
+  height: 15rem;
+  box-shadow: 0 6px 10px 0px rgba(25, 251, 24, 0.5);
+  transform: rotate(360deg);
+}
