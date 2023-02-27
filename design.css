@@ -20,9 +20,41 @@
   cursor: pointer;
 }
 
+.ch a {
+  color: #fff;
+  font-weight: 700;
+}
+
   .ch:hover {
-  width: 20rem;
-  height: 15rem;
+  width: 18rem;
+  height: 12rem;
   box-shadow: 0 6px 10px 0px rgba(25, 251, 24, 0.5);
   transform: rotate(360deg);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 786px){
+  .main-grid {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .ch {
+    width: 10rem;
+    height: 5rem;
+  }
 }

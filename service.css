@@ -26,8 +26,28 @@ h3, p {
    box-shadow: 0 3px 2px 0 rgb(0, 0, 0);
    padding: 0.8rem;
  }
+  
+a {
+  text-align: center;
+  color: #fff;
+  font-weight: 700
+}
 
- 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+} 
 
 
 
