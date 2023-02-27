@@ -142,6 +142,7 @@ a:active {
     }
   
   .navbar-links ul {
+    padding: 4px;
     width: 100%;
     flex-direction: column;
   }
