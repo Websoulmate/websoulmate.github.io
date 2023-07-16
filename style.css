@@ -1,159 +1,496 @@
-* {
+/* Root CSS Variable */
+
+:root:not(.light) {
+  --bg-color1: #292929;
+  --bg-color2: #1c1c1c;
+  --color1: #fff;
+  --color2: #888888;
+}
+
+/* CSS Globals */
+
+*,
+::after,
+::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-  body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #42445A, #B4B9EA, #858688)
-  }
-      
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-  }
 
-  .logo a {
-    color: #fff;
-    font-weight: 800;
-    font-size: 1.5rem;
-    margin: .5rem;
-  }
-  div a span {
-    color: red;
-  }
-
-  .navbar-links ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-
-.navbar-links li {
-    list-style: none;
-  }
-
-.navbar-links li a {
+a {
   text-decoration: none;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color1);
+  font-size: 4rem;
   font-weight: 700;
-  color: #fff;
-  margin: 1rem;
-  display: block;
 }
 
-.navbar-links li:hover {
-  background-color: #555;
+h3 {
+  color: var(--color1);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
-a:link {
-  text-decoration: none;
+/* Portofolio Wrapper*/
+
+.portofolio-navbar {
+  max-width: 1140px;
+  margin: 0;
+  padding: 0;
 }
 
-a:visited{
-  text-decoration: none;
+.portofolio-row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-a:hover {
-  text-decoration: none;
+/* Style for navition */
+
+header {
+  position: fixed;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1111;
+  transition: .8s;
+  background-color: var(--bg-color1);
 }
 
-a:active {
-  text-decoration: none;
-}
-.toggle-button {
-  position: absolute;
-  top: .75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
+header .portofolio-row.header-wrap {
   justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  align-items: center;
 }
 
-.toggle-button .bar {
-  height: 3px;
+.brand-name a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color1);
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 15px;
+  left: 1rem;
+}
+
+.navbar-links {
+  position: absolute;
+  top: -5px;
+  right: 1rem;
+}
+
+.hamburger i {
+  font-size: 20px;
+
+  color: #01143e;
+  display: none;
+  height: 30px;
+  width: 35px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.portofolio-navbar ul {
+  list-style: none;
+  margin: 0 ;
+  padding: 0;
+}
+
+.portofolio-navbar ul li {
+  display: inline;
+  margin-left: 35px;
+}
+
+.portofolio-navbar ul li a {
+  font-size: 1rem;
+  line-height: 72px;
+  color: var(--color1);
+  font-weight: 600;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  transform: .8s;
+}
+
+/* Style for slider */
+
+section {
+  z-index: 0;
+}
+
+.slider {
+  position: relative;
+  padding: 150px 10px 50px 10px;
+  background-color: var(--bg-color1);
+}
+
+.slider-content {
+  align-items: center !important;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider-general {
+  flex: 0 0 auto;
+  width: 60%;
+}
+
+/* Slider Left Content */
+
+.slider-general .welcome-msg {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color1);
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.welcome-text h1 {
+  display: inline;
+}
+
+.slider-general p {
+  line-height: 30px;
+  padding-right: 26%;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color1);
+}
+
+/* video loop */
+
+#web-video {
+  width: 100vw;
+  height: 10vh;
+  position: relative;
+}
+
+
+#web-video>video {
   width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Text Hover Effect for Portofolio */
+
+.text-wrap {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#element {
+  color: rebeccapurple;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#element:hover {
+  color: red;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.main-title {
+  -webkit-text-stroke: 1px var(--color1);
+  -webkit-text-fill-color: transparent;
+}
+
+.main-title, .hover-title {
+  transition: .5s cubic-bezier(0.51, 0.57, 0.17, 1);
+}
+
+.hover-title{
+  color: var(--color1);
+  position: absolute;
+  transform: translate3d(0, 100%, 0);
+}
+
+.text-wrap:hover .main-title{
+  transform: translate3d(0, -100%, 0);
+  transition-delay: 0.1s;
+}
+
+.text-wrap:hover .hover-title {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Download CV Button */
+
+.download-resume a {
+  color: var(--color1);
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+.download-resume  {
+  background-color: #FB5656;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 15px 30px;
+  position: relative;
+  transition: ease all 0.35s;
+  z-index: 1001;
+  line-height: 30px;
+}
+
+.download-resume::before {
+  background-color: #44f;
+  top: 0;
+  width: 0;
+  left: auto;
+  right: 0;
+  z-index: -1;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.download-resume:hover::before {
+  left: 0;
+  width: 100%;
+  right: auto;
+}
+
+/* Style for Slider Image*/
+
+.slider-image {
+  flex: 0 0 auto;
+  width: 40%;
+}
+
+.welcome-image img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.slider-image .welcome-image {
+  position: relative;
+  z-index: 2;
+  transition-duration: 0.4s; 
+}
+
+.slider-image .welcome-image::before {
+  content: "";
+  width: calc(50% + 10px);
+  height: calc(50% + 10px);
+  right: -10px;
+  bottom: -10px;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.7s;
+  background: linear-gradient(to right, 
+  #12c2e9, #c471ed, #f64f59);
+}
+
+.welcome-image:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.welcome-image:hover {
+  transform: translateY(-10.5px);
+}
+
+
+
+/* Footer Contact */
+
+#four {
+  background-color: var(--bg-color2);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact-info {
+  margin: 30px 0;
+}
+
+.contact-info span,
+.contact-info a {
+  color: var(--color2);
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-info h3 {
+  color: var(--color2);
+  transition: all 0.3s ease-out 0s;
+  cursor: pointer;
+}
+
+.social-link ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.social-link li {
+  margin: 40px 40px;
+}
+
+.social-link li a {
+  color: var(--color2);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-out 0s;
+}
+
+.social-box {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  position: relative;
+  color: #fff;
+}
+
+.social-box img {
+  border: 2px solid #fff;
+  border-radius: 50%;
   background-color: #fff;
-  border-radius: 10px;
 }
 
- .description{
-    background-image: url(images/monitor.jpg);
-    min-width: 100vw;
-    color: whitesmoke;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    display: block;
-    top: 30%;
-    position: absolute;
-    }
-
-  .btn-learn-more a {
-    width: 7rem;
-    margin-top: 1.4rem;
-    margin-right: 1rem;
-    background-color: red;
-    color: white;
-    font-weight: 700;
-    padding:6px;
-    position: relative;
-    right: -50%;
-    text-align: center;
-    bottom: 4px;
-    border-radius: 0.4rem;
-    border-color: none;
-    display: block;
-    cursor: pointer;
-  }
-  
-  .btn-learn-more a:hover{
-    background-color: white;
-    color: red;
-    opacity: 1;
-    border-color: none;
-    border-radius: 0.4rem;
-  }
-
-@media screen and (max-width: 768px) {
-  .toggle-button{
-    display: flex;
-    margin-top: -7px;
-  }
-  
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-  
-  .navbar  {
-    background-color: #333;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 100;
-    }
-  
-  .navbar-links ul {
-    width: 100%;
-    flex-direction: column;
-  }
-  
-  .navbar-links li {
-    text-align: center;
-  }
-  
-  .navbar-links li a {
-    padding: .5rem 1rem;
-    margin: .25rem;
-  }
-  
-  .navbar-links.active { 
-    display: flex;
-    }
+.button-link {
+  color: #fff;
+  background-color: var(--bg-color2);
+  border-style: none;
+  position: absolute;
+  right: -10px;
+  bottom: -20px;
+  opacity: 0;
+  transition: 1s;
 }
+
+.social-box:hover .button-link{
+  opacity: 1;
+  bottom: 0;
+}
+
+.social-box:hover img {
+  opacity: 0;
+}
+
+
+.contact-info h3:hover,
+.social-link li a:hover {
+  color: var(--color1);
+}
+
+/* Responsive */
+
+ @media screen and (max-width: 700px) {
+  h1,
+  h2 {
+    font-size: 3rem;
+  }
+  
+  /* Header Rensponsive */
+  
+  header {
+    position: fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1111;
+  
+   }
+   
+   .portofolio-navbar {
+     flex-direction: column;
+     align-items: flex-start;
+   }
+   
+   .brand-name .logo {
+     color: #fff;
+     top: 12px;
+   }
+   
+   .hamburger {
+     margin-right: 5px;
+   }
+   
+   .hamburger i {
+     display: flex;
+     color: #fff;
+   }
+   
+   .navbar-links  {
+     background-color: rgb(236, 241, 250);
+     width: 100%;
+     padding: 15px;
+     margin-top: 65px;
+     border-top: 1px solid #eee;
+     border-bottom: 1px solid #eee;
+     display: none;
+   }
+   
+    .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+    }
+    
+    .navbar-links ul li {
+      text-align: center;
+      display: block;
+    }
+    
+    .navbar-links ul li a {
+      line-height: 42px;
+      color: #01143e;
+    }
+    
+    .navbar-links ul li:hover {
+      background-color: #CAC1C1;
+    }
+  
+    
+    .navbar-links.active {
+      display: flex;
+    }
+ 
+ /* Slider Rensponsive */
+ 
+ .slider-content {
+   margin: 0 -15px;
+   padding: 0 30px;
+ }
+ 
+ .slider-image {
+   width: 100%;
+   order: 1;
+ }
+ 
+ .slider-general {
+   margin-top: 3rem;
+   width: 100%;
+   order: 2;
+ }
+  
+ } 
+ 
+ 
