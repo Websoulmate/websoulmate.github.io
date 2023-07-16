@@ -1,45 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Pasang Dev</title>
-
+  <title>Pasang Tamang</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+  
+  $('#sec-1').addClass("active");
+  
+  Smooth scrolling
+  */
+  
+  $("#sec-1").click(function()
+  {
+  $('html, body').animate({
+  scrollTop:
+  
+  $("#one").offset().top-66
+  }, 1000);
+  return false;
+  });
+  
+  $("#sec-2").click(function()
+  {
+  $('html,body').animate({
+  scrollTop:
+  $("#two").offset().top-112
+  }, 1000);
+  return false;
+  });
+  
+  $("#sec-3").click(function()
+  {
+  $('html,body').animate({
+  scrollTop:
+  $("#three").offset().top-112
+  }, 1000);
+  return false;
+  });
+  
+  $("#sec-4").click(function()
+  {
+  $(this).addClass("active");
+  $('html,body').animate({
+  scrollTop:
+  $("#four").offset().top-112
+  }, 1000);
+  return false;
+  });
+  
+  
+  $('#two').waypoint(function() {
+  
+  $(".navbar-links ul li").children().removeClass("active");
+  $("#sec-2").addClass("active");
+  
+  }, { offset: 101 });
+  
+  $('#three').waypoint(function() {
+  
+  $(".navbar-links ul li").children().removeClass("active");
+  $("#sec-3").addClass("active");
+  
+  }, { offset: 101 });
+  
+  $('#four').waypoint(function() {
+  
+  $(".navbar-links ul li").children().removeClass("active");
+  $("#sec-4").addClass("active");
+  
+  }, { offset: 101 });
+  
+  $('#one').waypoint(function() {
+  
+  $(".navbar-links ul li").children().removeClass("active");
+  $("#sec-1").addClass("active");
+  
+  }, { offset: 0 });
+  
+  </script>
+  
+  <script src="https://kit.fontawesome.com/b66ec06621.js" crossorigin="anonymous"></script>
+  
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
 </head>
 
 <body>
-
-  <nav class="navbar">
-
-    <div class="logo"><a href="index.html">G&W<span>dev</span></a></div>
-    <a href="#" class="toggle-button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-    <div class="navbar-links">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="design.html">Design</a></li>
-        <li><a href="service.html">Service</a></li>
-        <li><a href="protofilio.html">Protofolio</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+  <header>
+    <div class="portofolio-navbar">
+      <div id="web-video">
+        <video src="website.mp4" type="video/mp4" height="100%" width="100%" autoplay muted loop></video>
+      </div>
+      <div class="portofolio-row header-wrap">
+        <div class="brand-name">
+          <a href="#" class="logo">Pasang Tamang</a>
+        </div>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navbar-links">
+           <ul>
+             <li><a id="sec-1" href="#one">Home</li>
+             <li><a id="sec-2" href="#two">About</li>
+             <li><a id="sec-3" href="#three">Resume</li>
+             <li><a id="sec-4" href="#four">Contact</li>
+           </ul>
+        </div>   
+      </div>
     </div>
-    </ul>
-  </nav>
+  </header>
+  
+  <section id="one">
+    <div id="two" class="slider">
+      <div class="portofolio-container">
+        <div class="slider-content">
+          <div class="slider-general">
+            <span class="welcome-msg">
+              Welcome! Hello World!!
+            </span>
+            <div class="welcome-text">
+              <h1>Hi, I'm </h1><span id="element"></span>
+              <div class="text-wrap">
+              
+              <h2 class="hover-title">Pasang Tamang</h2>
+              </div>
+              <div id="three" classs="about">
+              <p>I am a passionate Graphic Designer and Web Developer. I have good skill of Graphics Design and Web Development. It will support each other. It's combo combination for developing a good website. </p>
+              </div>
+              
+              <div  class="download-resume">
+                <a href="profile.pdf" downloa"resume">Download CV</a>
+              </div>
+            </div>
+          </div>
+          <div class="slider-image">
+            <div class="welcome-image">
+              <img src="pasang.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<div id="web-video">
+  <video src="website.mp4" type="video/mp4" height="100%" width="100%" autoplay muted loop></video>
+</div>
 
-  <div class="description">
-    <h2>Hey I am Pasang Tamang</h2>
-    <p>I am Graphics Designer & Frontend Web Developer</p>
-
-    <div class="btn-learn-more"><a href="design.html">Learn More</a></div>
-  </div>
+  <section id="four">
+    <div class="portofolio-container">
+      <div class="text-wrap">
+        <h2 class="main-title">Stay Connected</h2>
+        <h2 class="hover-title">Stay Connected</h2>
+      </div>
+      <div class="contact-info">
+        <span>
+          Yarmuk, Riyadh, Kingdom of Saudi Arabia
+        </span>
+        <h3>pasutamang@gmail.com</h3>
+        <a href="#">+966 (057) 1017765</a>
+      </div>
+      <div class="social-link">
+        <ul>
+          <li>
+            <div class="social-box">
+            <img src="/pic/facebook.png" width="100%" height="100%" alt="Facebook"/>
+            <a href="https://www.facebook.com/pasumax"><input type="button" value="Facebook" class="button-link"></a>
+            </div>
+          </li>
+          <li>
+            <div class="social-box">
+              <img src="/pic/twitter.png" width="100%" height="100%" alt="Twitter"/>
+            <a href="https://www.twitter.com/pasumax"><input type="button" value="Twitter" class="button-link"></a>
+            </div>
+          </li>
+          <li>
+            <div class="social-box">
+              <img src="/pic/instagram.png" width="100%" height="100%" alt="Instagram"/>
+            <a href="https://www.instagram.com/thepasumax">
+              <input type="button" value="Instagram" class="button-link"></a>
+            </div>
+          </li>
+          <li>
+            <div class="social-box">
+              <img src="/pic/linkedin.png" width="100%" height="100%" alt="LinkedIn" />
+            <a href="https://www.linkedin.com/in/pasumax">
+              <input type="button" value="LinkedIn" class="button-link"></a>
+              </div>
+          </li>
+          <li>
+            <div class="social-box">
+              <img src="/pic/telegram.png" width="100%" height="100%" alt="Telegram" />
+            <a href="https://www.telegram.org/in/pasumax">
+              <input type="button" value="Telegram" class="button-link"></a>
+              </div>
+          </li>
+          <li>
+            <div class="social-box">
+              <img src="/pic/github.png" width="100%" height="100%" alt="Github" />
+            <a href="https://www.github.com/websoulmate">
+              <input type="button" value="Github" class="button-link"></a>
+              </div>
+          </li>
+          <li>
+            <div class="social-box">
+              <img src="/pic/youtube.png" width="100%" height="100%" alt="Youtube"/>
+            <a href="#https://www.youtube.com/thepasumax">
+              <input type="button" value="Youtube" class="button-link"></a>
+              </div>
+          </li>
+          <li>
+            <div class="social-box">
+              <img src="/pic/tiktok.png" width="100%" height="100%" alt="Tiktok"/>
+            <a href="#https://www.tiktok.com/pasumax">
+              <input type="button" value="Tiktok" class="button-link"></a>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', { strings: ['Pasang Tamang.'], typeSpeed: 60, });
+  </script>
+  
   <script src="main.js"></script>
 </body>
-
 </html>
