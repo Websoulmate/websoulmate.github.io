@@ -18,7 +18,7 @@
   $('html, body').animate({
   scrollTop:
   
-  $("#one").offset().top-66
+  $("#home").offset().top-66
   }, 1000);
   return false;
   });
@@ -27,7 +27,7 @@
   {
   $('html,body').animate({
   scrollTop:
-  $("#two").offset().top-112
+  $("#about").offset().top-112
   }, 1000);
   return false;
   });
@@ -36,7 +36,7 @@
   {
   $('html,body').animate({
   scrollTop:
-  $("#three").offset().top-112
+  $("#resume").offset().top-112
   }, 1000);
   return false;
   });
@@ -46,34 +46,34 @@
   $(this).addClass("active");
   $('html,body').animate({
   scrollTop:
-  $("#four").offset().top-112
+  $("#contact").offset().top-112
   }, 1000);
   return false;
   });
   
   
-  $('#two').waypoint(function() {
+  $('#about').waypoint(function() {
   
   $(".navbar-links ul li").children().removeClass("active");
   $("#sec-2").addClass("active");
   
   }, { offset: 101 });
   
-  $('#three').waypoint(function() {
+  $('#resume').waypoint(function() {
   
   $(".navbar-links ul li").children().removeClass("active");
   $("#sec-3").addClass("active");
   
   }, { offset: 101 });
   
-  $('#four').waypoint(function() {
+  $('#contact').waypoint(function() {
   
   $(".navbar-links ul li").children().removeClass("active");
   $("#sec-4").addClass("active");
   
   }, { offset: 101 });
   
-  $('#one').waypoint(function() {
+  $('#home').waypoint(function() {
   
   $(".navbar-links ul li").children().removeClass("active");
   $("#sec-1").addClass("active");
@@ -85,6 +85,7 @@
   <script src="https://kit.fontawesome.com/b66ec06621.js" crossorigin="anonymous"></script>
   
   <link rel="stylesheet" href="style.css">
+  
   
 </head>
 
@@ -103,18 +104,18 @@
         </div>
         <div class="navbar-links">
            <ul>
-             <li><a id="sec-1" href="#one">Home</li>
-             <li><a id="sec-2" href="#two">About</li>
-             <li><a id="sec-3" href="#three">Resume</li>
-             <li><a id="sec-4" href="#four">Contact</li>
+             <li><a id="sec-1" href="#home">Home</li>
+             <li><a id="sec-2" href="#about">About</li>
+             <li><a id="sec-3" href="#resume">Resume</li>
+             <li><a id="sec-4" href="#contact">Contact</li>
            </ul>
         </div>   
       </div>
     </div>
   </header>
   
-  <section id="one">
-    <div id="two" class="slider">
+  <section id="home">
+    <div id="about" class="slider">
       <div class="portofolio-container">
         <div class="slider-content">
           <div class="slider-general">
@@ -127,12 +128,12 @@
               
               <h2 class="hover-title">Pasang Tamang</h2>
               </div>
-              <div id="three" classs="about">
+              <div id="resume" classs="about">
               <p>I am a passionate Graphic Designer and Web Developer. I have good skill of Graphics Design and Web Development. It will support each other. It's combo combination for developing a good website. </p>
               </div>
               
               <div  class="download-resume">
-                <a href="profile.pdf" downloa"resume">Download CV</a>
+                <a href="profile.pdf" download="resume">Download CV</a>
               </div>
             </div>
           </div>
@@ -150,7 +151,7 @@
   <video src="website.mp4" type="video/mp4" height="100%" width="100%" autoplay muted loop></video>
 </div>
 
-  <section id="four">
+  <section id="contact">
     <div class="portofolio-container">
       <div class="text-wrap">
         <h2 class="main-title">Stay Connected</h2>
@@ -166,55 +167,55 @@
       <div class="social-link">
         <ul>
           <li>
-            <div class="social-box">
-            <img src="/design/facebook.png" width="100%" height="100%" alt="Facebook"/>
+            <div class="social-box f">
+            <img src="/pic/facebook.png" width="100%" height="100%" alt="Facebook"/>
             <a href="https://www.facebook.com/pasumax"><input type="button" value="Facebook" class="button-link"></a>
             </div>
           </li>
           <li>
-            <div class="social-box">
-              <img src="/design/twitter.png" width="100%" height="100%" alt="Twitter"/>
+            <div class="social-box t">
+              <img src="/pic/twitter.png" width="100%" height="100%" alt="Twitter"/>
             <a href="https://www.twitter.com/pasumax"><input type="button" value="Twitter" class="button-link"></a>
             </div>
           </li>
           <li>
-            <div class="social-box">
-              <img src="/design/instagram.png" width="100%" height="100%" alt="Instagram"/>
+            <div class="social-box i">
+              <img src="/pic/instagram.png" width="100%" height="100%" alt="Instagram"/>
             <a href="https://www.instagram.com/thepasumax">
               <input type="button" value="Instagram" class="button-link"></a>
             </div>
           </li>
           <li>
-            <div class="social-box">
-              <img src="/design/linkedin.png" width="100%" height="100%" alt="LinkedIn" />
+            <div class="social-box l">
+              <img src="/pic/linkedin.png" width="100%" height="100%" alt="LinkedIn" />
             <a href="https://www.linkedin.com/in/pasumax">
               <input type="button" value="LinkedIn" class="button-link"></a>
               </div>
           </li>
           <li>
-            <div class="social-box">
-              <img src="/design/telegram.png" width="100%" height="100%" alt="Telegram" />
+            <div class="social-box tl">
+              <img src="/pic/telegram.svg" width="100%" height="100%" alt="Telegram" />
             <a href="https://www.telegram.org/in/pasumax">
               <input type="button" value="Telegram" class="button-link"></a>
               </div>
           </li>
           <li>
-            <div class="social-box">
-              <img src="/design/github.png" width="100%" height="100%" alt="Github" />
+            <div class="social-box g">
+              <img src="/pic/github.png" width="100%" height="100%" alt="Github" />
             <a href="https://www.github.com/websoulmate">
               <input type="button" value="Github" class="button-link"></a>
               </div>
           </li>
           <li>
-            <div class="social-box">
-              <img src="/design/youtube.png" width="100%" height="100%" alt="Youtube"/>
+            <div class="social-box y">
+              <img src="/pic/youtube.svg" width="100%" height="100%" alt="Youtube"/>
             <a href="#https://www.youtube.com/thepasumax">
               <input type="button" value="Youtube" class="button-link"></a>
               </div>
           </li>
           <li>
-            <div class="social-box">
-              <img src="/design/tiktok.png" width="100%" height="100%" alt="Tiktok"/>
+            <div class="social-box tk">
+              <img src="/pic/tiktok.svg" width="100%" height="100%" alt="Tiktok"/>
             <a href="#https://www.tiktok.com/pasumax">
               <input type="button" value="Tiktok" class="button-link"></a>
               </div>
