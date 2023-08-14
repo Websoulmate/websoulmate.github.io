@@ -93,7 +93,7 @@ h3 {
 /* Portofolio Wrapper*/
 
 .portofolio-navbar {
-  max-width: 1140px;
+  max-width: 100vw;
   margin: 0;
   padding: 0;
 }
@@ -160,7 +160,7 @@ header .portofolio-row.header-wrap {
 
 .portofolio-navbar ul li {
   display: inline;
-  margin-left: 35px;
+  margin-right: 2rem;
 }
 
 .portofolio-navbar ul li a {
@@ -201,6 +201,7 @@ header .portofolio-row.header-wrap {
 .slider-general {
   flex: 0 0 auto;
   width: 60%;
+  text-align: center;
 }
 
 /* Slider Left Content */
@@ -211,7 +212,7 @@ header .portofolio-row.header-wrap {
 
 .slider-general p {
   line-height: 30px;
-  padding-right: 26%;
+  margin: 1rem;
   font-family: 'Poppins', sans-serif;
   color: var(--color1);
 }
