@@ -731,5 +731,9 @@ header .portofolio-row.header-wrap {
     width: 100%;
     order: 2;
   }
+  
+  .slider-general p {
+    max-width: 80vw;
+  }
 
 }
