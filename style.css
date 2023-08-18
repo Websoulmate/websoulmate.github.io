@@ -64,7 +64,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  line: height: 2.5rem;
+  line-height: 2.5rem;
   font-weight: 600;
 }
 
@@ -217,7 +217,7 @@ header .portofolio-row.header-wrap {
 .slider-general p {
   max-width: 30vw;
   line-height: 30px;
-  margin: 1.3rem;
+  font-size: 1.3rem;
   display: inline-block;
   font-family: 'Poppins', sans-serif;
   color: var(--color1);
