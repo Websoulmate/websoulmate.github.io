@@ -674,12 +674,21 @@ header .portofolio-row.header-wrap {
   }
 
   .navbar-links {
-    background-color: rgb(236, 241, 250);
+    background: rgba(255, 255, 255, 0.2); /* White background with 20% opacity */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    padding: 20px; /* Padding inside the element */
+    
+    left: 0px;
+    right: 0px;
     width: 100%;
     padding: 15px;
     margin-top: 65px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    /* border-top: 1px solid #eee; */
+    /* border-bottom: 1px solid #eee; */
     display: none;
   }
 
@@ -700,6 +709,9 @@ header .portofolio-row.header-wrap {
 
   .navbar-links ul li:hover {
     background-color: #CAC1C1;
+    opacity: 0.6;
+    width: 100%;
+    border-radius: 10px;
   }
 
 
