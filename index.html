@@ -10,113 +10,39 @@
  
    <title>Pasang Tamang</title>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js">
-    $('#sec-1').addClass("active");
-
-    //Smooth scrolling
-      
-
-    $("#sec-1").click(function()
-    {
-      $('html, body').animate({
-        scrollTop:
-
-          $("#home").offset().top - 66
-      }, 1000);
-      return false;
-    });
-
-    $("#sec-2").click(function()
-    {
-      $('html,body').animate({
-        scrollTop: $("#about").offset().top - 112
-      }, 1000);
-      return false;
-    });
-
-    $("#sec-3").click(function()
-    {
-      $('html,body').animate({
-        scrollTop: $("#resume").offset().top - 112
-      }, 1000);
-      return false;
-    });
-
-    $("#sec-4").click(function()
-    {
-      $(this).addClass("active");
-      $('html,body').animate({
-        scrollTop: $("#contact").offset().top - 112
-      }, 1000);
-      return false;
-    });
-
-
-    $('#about').waypoint(function() {
-
-      $(".navbar-links ul li").children().removeClass("active");
-      $("#sec-2").addClass("active");
-
-    }, { offset: 101 });
-
-    $('#resume').waypoint(function() {
-
-      $(".navbar-links ul li").children().removeClass("active");
-      $("#sec-3").addClass("active");
-
-    }, { offset: 101 });
-
-    $('#contact').waypoint(function() {
-
-      $(".navbar-links ul li").children().removeClass("active");
-      $("#sec-4").addClass("active");
-
-    }, { offset: 101 });
-
-    $('#home').waypoint(function() {
-
-      $(".navbar-links ul li").children().removeClass("active");
-      $("#sec-1").addClass("active");
-
-    }, { offset: 0 });
-  </script>
-
-  <script src="https://kit.fontawesome.com/b66ec06621.js" crossorigin="anonymous"></script>
-
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header id="home">
-    <div class="portofolio-navbar">
-      
-      <div class="portofolio-row header-wrap">
-        <div class="brand-name">
-          <a href="#" class="logo">Pasang Tamang</a>
-        </div>
-        <div class="hamburger">
-			<span class="bar"></span>
-			<span class="bar"></span>
-        </div>
-	 </div>
-        <div class="navbar-links">
-          <ul>
-            <li><a id="sec-1" href="#home">Home</li>
-            <li><a id="sec-2" href="#about">About</li>
-            <li><a id="sec-3" href="#resume">Resume</li>
-            <li><a id="sec-4" href="#contact">Contact</li>
-          </ul>
-        
-      </div>
-    </div>
+  <nav>
+	<input type="checkbox" id="sidebar-active">
+	<label for="sidebar-active" class="open-sidebar-button">
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+	</label>
+	<label id="overlay" for="sidebar-active"></label>
+		<div class="links-container">
+			<label for="sidebar-active" class="close-sidebar-button">
+				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+			</label>
+			
+				<a id="logo" href="#about">PT</a>
+				<a id="sec-1" href="#home">Home</a>
+				<a id="sec-2" href="#about">About</a>
+				<a id="sec-3" href="#projects">Projects</a>
+				<a id="sec-4" href="#resume">Resume</a>
+				<a id="sec-5" href="#contact">Contact</a>
+			   
+	</div>
+	</nav>
+
+ <section id="home">	  
     <span class="welcome-msg">
       Welcome!
     </span>
     <h1 class="landing-title">Hello World!</h1>
     <h3 class="landing-msg">Hire Me! <br>I'm talented Web Developer.</h3>
-  </header>
+</section>
 
   <section id="about">
     <div class="slider">
@@ -126,8 +52,8 @@
           
             <div class="welcome-text">
               <h1>Hi, I'm </h1><span id="element"></span>
-              <div class="text-wrap">
-
+             
+			  <div class="text-wrap">
                 <h2 class="hover-title">Pasang Tamang</h2>
               </div>
               <div class="about">
@@ -143,6 +69,17 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section id="projects">
+	 <div class="project-container">
+
+		<a href="Rock-Paper-Scissors/rps.html"><img src="images/rock-paper-scissors.png" alt="rock-paper-scissors"></a>
+
+		<a href="projects/todo-1.html"><img src="images/todo-blue.png" alt="todo"></a>
+
+		<a href="projects/todo-2.html"><img src="images/todo-red.png" alt="todo"></a>
+	 </div>
   </section>
 
   <section id="resume">
@@ -182,54 +119,54 @@
         <ul>
           <li>
             <div class="social-box f">
-              <img src="/design/facebook.png" width="100%" height="100%" alt="Facebook" />
+              <img src="/images/facebook.png" width="100%" height="100%" alt="Facebook" />
               <a href="https://www.facebook.com/pasumax"><input type="button" value="Facebook" class="button-link"></a>
             </div>
           </li>
           <li>
             <div class="social-box t">
-              <img src="/design/twitter.png" width="100%" height="100%" alt="Twitter" />
+              <img src="/images/twitter.png" width="100%" height="100%" alt="Twitter" />
               <a href="https://www.twitter.com/pasumax"><input type="button" value="Twitter" class="button-link"></a>
             </div>
           </li>
           <li>
             <div class="social-box i">
-              <img src="/design/instagram.png" width="100%" height="100%" alt="Instagram" />
+              <img src="/images/instagram.png" width="100%" height="100%" alt="Instagram" />
               <a href="https://www.instagram.com/thepasumax">
                 <input type="button" value="Instagram" class="button-link"></a>
             </div>
           </li>
           <li>
             <div class="social-box l">
-              <img src="/design/linkedin.png" width="100%" height="100%" alt="LinkedIn" />
+              <img src="/images/linkedin.png" width="100%" height="100%" alt="LinkedIn" />
               <a href="https://www.linkedin.com/in/pasumax">
                 <input type="button" value="LinkedIn" class="button-link"></a>
             </div>
           </li>
           <li>
             <div class="social-box tl">
-              <img src="/design/telegram.png" width="100%" height="100%" alt="Telegram" />
+              <img src="/images/telegram.png" width="100%" height="100%" alt="Telegram" />
               <a href="https://www.telegram.org/in/pasumax">
                 <input type="button" value="Telegram" class="button-link"></a>
             </div>
           </li>
           <li>
             <div class="social-box g">
-              <img src="/design/github.png" width="100%" height="100%" alt="Github" />
+              <img src="/images/github.png" width="100%" height="100%" alt="Github" />
               <a href="https://www.github.com/websoulmate">
                 <input type="button" value="Github" class="button-link"></a>
             </div>
           </li>
           <li>
             <div class="social-box y">
-              <img src="/design/youtube.png" width="100%" height="100%" alt="Youtube" />
+              <img src="/images/youtube.png" width="100%" height="100%" alt="Youtube" />
               <a href="#https://www.youtube.com/thepasumax">
                 <input type="button" value="Youtube" class="button-link"></a>
             </div>
           </li>
           <li>
             <div class="social-box tk">
-              <img src="/design/tiktok.svg" width="100%" height="100%" alt="Tiktok" />
+              <img src="/images/tiktok.svg" width="100%" height="100%" alt="Tiktok" />
               <a href="#https://www.tiktok.com/pasumax">
                 <input type="button" value="Tiktok" class="button-link"></a>
             </div>

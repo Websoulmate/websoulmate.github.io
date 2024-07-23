@@ -7,6 +7,12 @@
 	--color2: #888888;
   }
   
+  :root {
+	  --color-1: #0f1016;
+	  --text-color: #f0f0f0;
+	  --accent-color: #006aff;
+  }
+  
   /* CSS Globals */
   
   *,
@@ -22,9 +28,78 @@
 	font-family: sans-serif;
   }
   
+  nav {
+	  height: 60px;
+	  display: flex;
+	  justify-content: flex-end;
+	  align-items: center;
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  left: 0;
+	  z-index: 9999;
+	  transition: .8s;
+	  
+  }
   
+  .links-container {
+	  height: 100%;
+	  width: 100%;
+	  display: flex;
+	  flex-direction: row;
+	  align-items: center;
+	  /* background-color: black;
+	  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+	  opacity: 0.8; */
+	  backdrop-filter: blur(10px); 
+	  -webkit-backdrop-filter: blur(10px);  /*For Safari*/
+	  padding: 30px;
+  }
+  
+  
+  
+  nav #logo {
+	  color: orchid;
+	  font-weight: 600;
+	  transition: 0.5s;
+	  float: left;
+  }
+  
+  nav #logo:hover {
+	  color: red;
+  }
+  
+  nav a {
+	  height: 100%;
+	  padding: 0 20px;
+	  display: flex;
+	  align-items: center;
+	  text-decoration: none;
+	  color: whitesmoke;
+  }
+  
+  nav  a:hover {
+	  background-color: rgba(174, 14, 174, 0.6);
+  }
+  
+  nav .home-link {
+	  margin-right: auto;
+  }
+  
+  nav svg {
+	  fill: var(--text-color);
+  }
+  
+  #sidebar-active {
+	  display: none;
+  }
+  
+  .open-sidebar-button, .close-sidebar-button {
+	  display: none;
+  }
   #home {
-	background-image: url(/design/color-laptop.jpg);
+	padding-right: 2rem; 
+	background-image: url(/images/color-laptop.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -69,15 +144,6 @@
 	font-weight: 600;
   }
   
-  a {
-	text-decoration: none;
-	outline: none;
-  }
-  
-  li {
-	list-style: none;
-  }
-  
   h1,
   h2 {
 	font-family: 'Poppins', sans-serif;
@@ -92,138 +158,20 @@
 	font-size: 1.5rem;
 	font-weight: 500;
   }
+	  
   
-  /* Style for navition */
-  
-  .portofolio-navbar {
-	  max-width: 100vw;
-	  height: 40px;
-	  position: fixed;
-	  left: 0;
-	  right: 0;
-	  top: 0;
-	  z-index: 1111;
-	  transition: .8s;
-		background-color: black;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		opacity: 0.8;
-		backdrop-filter: blur(10px);
-		-webkit-backdrop-filter: blur(10px);  /*For Safari*/
-		padding: 30px;
-	}
-  
-	.header-wrap {
-	  display: flex;
-	  align-items: center;
-	  justify-content: space-between;
-  }
-  
-  .brand-name a {
-	font-size: 1.5rem;
-	font-weight: 500;
-	color: var(--color1);
-	font-family: 'Poppins', sans-serif;
-	position: absolute;
-	top: 15px;
-	left: 2rem;
-  }
-  
-  .navbar-links {
-	position: absolute;
-	top: -5px;
-	right: 1rem;
-  }
-  
-  
-	.hamburger {
-	  width: 30px;
-	  height: 21px;
-	  top: -10px;
-	  background: none;
-	  border: none;
-	  display: none;
-	  flex-direction: column;
-	  justify-content: space-between;
-	  align-items: center;
-	  cursor: pointer;
-	  position: relative;
-	}
-  
-  .bar,
-  .bar::after {
-	height: 3px;
-	width: 100%;
-	background-color: white;
-	border-radius: 4px;
-	transition: 300ms, transition-color 300ms, transform 300ms;
-  }
-  
-  .bar::after {
-	content: "";
-	position: absolute;
-	inset: 0;
-	margin: auto;
-  }
-  
-  .hamburger:hover .bar {
-	width: 70%;
-  }
-  
-  .hamburger:hover .bar::after {
-	width: 20%;
-  }
-  
-  .hamburger.active .bar::after {
-	width: 0;
-  }
-  
-  .hamburger.active .bar {
-	background-color: red;
-  }
-  
-  .hamburger.active .bar:nth-child(1) {
-	width: 70%;
-	transform: rotate(30deg) translateY(9px) translateX(3px);
-  }
-  
-  .hamburger.active .bar:nth-child(2) {
-	width: 70%;
-	transform: rotate(-30deg) translateY(-9px) translateX(3px);
-  }
-  
-  
-  .portofolio-navbar ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-  }
-  
-  .portofolio-navbar ul li {
-	display: inline;
-	margin-right: 2rem;
-  }
-  
-  .portofolio-navbar ul li a {
-	font-size: 1rem;
-	line-height: 72px;
-	color: var(--color1);
-	font-weight: 600;
-	position: relative;
-	font-family: 'Poppins', sans-serif;
-	text-transform: uppercase;
-	transform: .8s;
-  }
-  
+	
   /* Style for slider */
   
   #about {
-	background-image: url(design/dark-laptop.jpg);
+	background-image: url(images/dark-laptop.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-color: var(--bg-color1);
 	height: 100vh;
 	width: 100vw;
+	padding-right: 2rem; 
   }
   
   .slider {
@@ -242,7 +190,8 @@
   
   .slider-general {
 	flex: 0 0 auto;
-	width: 60%;
+	width: min(600px, 100% - 4rem);
+	margin-inline: auto;
 	text-align: center;
   }
   
@@ -252,8 +201,14 @@
 	display: inline;
   }
   
+  .slider-general {
+	  width: min(600px, 100% - 4rem);
+	  margin-inline: auto;
+	  text-align: center;
+  }
+  
   .slider-general p {
-	max-width: 30vw;
+	max-width: 45vw;
 	line-height: 30px;
 	font-size: 1.3rem;
 	display: inline-block;
@@ -330,10 +285,41 @@
 	transform: translateY(-10.5px);
   }
   
+  #projects {
+	  /* background-image: url(design/dark-laptop.jpg);
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  background-size: cover; */
+	  background: linear-gradient(180deg, black, white);
+	  height: 100vh;
+	  width: 100vw;
+	  display: flex;
+	  flex-wrap: wrap;
+	  margin: 0;
+	  padding: 0;
+	  /* padding-right: 2rem;  */
+	}
+  
+	.project-container{
+	  flex: 1 1 50%; /* grow, shrink, basis */
+	  box-sizing: border-box;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  
+  }
+  
+  .project-container > a > img {
+	  width: 100%;
+	  height: auto;
+	  padding: 10px;
+	}
+  
+  
   /* Download CV Button */
   
   #resume {
-	background-image: url(design/cube.jpg);
+	background-image: url(images/cube.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -347,6 +333,7 @@
 	color: var(--color1);
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
+	text-decoration: none;
   }
   
   .download-resume {
@@ -362,6 +349,7 @@
 	transition: ease all 0.35s;
 	z-index: 1001;
 	line-height: 30px;
+	cursor: pointer;
   }
   
   .download-resume::before {
@@ -504,7 +492,7 @@
   /* Footer Contact */
   
   #contact {
-	background-image: url(design/black-laptop.jpg);
+	background-image: url(images/black-laptop.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -679,84 +667,66 @@
   
   /* Responsive */
   
-  @media screen and (max-width: 700px) {
-  
-	h1,
-	h2 {
-	  font-size: 3rem;
-	}
-  
-	/* Header Rensponsive */
-  
-	.portofolio-navbar {
-	  z-index: 1111;
-	  flex-direction: column;
-	  align-items: flex-start;
-	  opacity: 1;
-	}
-  
-	.header-wrap {
-	  justify-content: space-between;
-	  align-items: center;
-	}
-  
-	.brand-name .logo {
-	  color: #fff;
-	  top: 12px;
-	}
-  
-	.hamburger {
-	  display: flex;
-	  margin-right: 1rem;
-	}
-   
-  
-	.navbar-links {
-	  background: rgba(255, 255, 255, 0.2); /* White background with 20% opacity */
-	  border-radius: 15px; /* Rounded corners */
-	  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
-	  backdrop-filter: blur(10px); /* Blur effect */
-	  -webkit-backdrop-filter: blur(10px); /* For Safari */
-	  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
-	  padding: 20px; /* Padding inside the element */
-	  
-	  left: 0px;
-	  right: 0px;
-	  width: 100%;
-	  padding: 15px;
-	  margin-top: 60px;
-	  /* border-top: 1px solid #eee; */
-	  /* border-bottom: 1px solid #eee; */
-	  display: none;
-	  
-	}
-  
-	.navbar-links ul {
-	  width: 100%;
-	  flex-direction: column;
-	}
-  
-	.navbar-links ul li {
-	  text-align: center;
-	  display: block;
-	}
-  
-	.navbar-links ul li a {
-	  line-height: 42px;
-	  color: #01143e;
-	}
-  
-	.navbar-links ul li:hover {
-	  background-color: #CAC1C1;
-	  opacity: 0.6;
-	  width: 100%;
-	  border-radius: 10px;
-	}
+  @media(max-width: 650px) {
+		  .links-container {
+			  flex-direction: column;
+			  align-items: flex-start;
+			  position: fixed;
+			  top: 0;
+			  right: -100%;
+			  z-index: 9999;
+			  width: 300px;
+			  background: rgba(0, 0, 20, 0.3); /* black background with 20% opacity */
+			  border-radius: 15px; /* Rounded corners */
+			  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+			  backdrop-filter: blur(10px); /* Blur effect */
+			  -webkit-backdrop-filter: blur(10px); /* For Safari */
+			  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+			  padding: 20px; /* Padding inside the element */
+			  /* background-color: var(--color-1);
+			  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25); */
+			  transition: 0.75s ease-out;
+		  }
   
   
-	.navbar-links.active {
-	  display: flex;
-	}
+  
+		  nav a{
+			  box-sizing: border-box;
+			  height: auto;
+			  width: 100%;
+			  padding: 20px 30px;
+			  font-weight: 500;
+			  font-size: 18px;
+			  justify-content: flex-start;
+		  }
+  
+		  nav a:hover{
+			  border-radius: 10px;
+		  }
+  
+		  .close-sidebar-button {
+			  padding-left: 20px;
+			  display: block;
+	  }
+  
+		  .open-sidebar-button {
+			  padding: 20px;
+			  display: block;
+	  } 
+  
+		  #sidebar-active:checked ~ .links-container {
+			  right: 0;
+	  }
+		  #sidebar-active:checked ~ #overlay {
+			  height: 100%;
+			  width: 100%;
+			  position: fixed;
+			  top: 0;
+			  left: 0;
+			  z-index: 9999;
+		  }
+  
+  
   
 	/* Slider Rensponsive */
   
@@ -783,18 +753,56 @@
 	  order: 2;
 	}
 	
-	.slider-general p {
-	  max-width: 80vw;
+	.project-container {
+	  flex: 1 1 80%; 
 	}
+	/* .slider-general p {
+	  max-width: 80vw;
+	} */
   
   }
   
-  @media screen and (max-width: 800px) {
-	  section {
-	   /*  max-width:900px;
-	   margin-inline: auto; */
-		width: min(100lvh, 100% - 4rem);
-		margin-inline: auto;
+  /* for Tablet */
+  @media (min-width: 651px) and (max-width: 768px) {
+  
+  .slider-general {
+	  width: min(350px, 100%);
+	  margin-inline: auto;
+	  text-align: center;
+	  margin-top: .5rem;
+  }
+  }
+  
+  /* Styles for desktops */
+  @media (min-width: 769px) and (max-width: 992px) {
+  
+	  .slider-general {
+		  width: min(400px, 100%);
+		  margin-inline: auto;
+		  text-align: center;
 	  }
-	  
+	}
+	
+  /* Styles for large desktops */
+  @media (min-width: 993px) and (max-width: 1200px){
+  
+  
+	  .slider-general {
+		  width: min(400px, 100%);
+		  margin-inline: auto;
+		  text-align: center;
+	  }
 	 }
+  
+	 /* Styles for extra large desktops */
+  @media (min-width: 1201px) {
+	  section {
+		  padding-inline: 8rem;
+	  }
+  
+	  .slider-general {
+		  width: min(500px, 100% - 4rem);
+		  margin-inline: auto;
+		  text-align: center;
+	  }
+  }
