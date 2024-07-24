@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>todo Lists</title>
+
+  <!-- HTML -->
+
+  <link rel="stylesheet" href="todo-1.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="todo-app">
+      <div class="title">
+
+        <h2> <img src="images-1/todo.jpeg" alt="todo"> To-Do Lists </h2>
+      </div>
+      <div class="input">
+        <input type="text" id="input-box" placeholder="Type Your lists" onkeydown="
+			keyDownHandle(event);
+			">
+        <button onclick="
+        addTask();
+        " id="add-task">Add</button>
+      </div>
+      <ul id="list-container">
+       <!--  <li class="checked">Task 1</li>
+       <li>Task 2</li>
+       <li>Task 3</li> -->      
+       </ul>
+    </div>
+  </div>
+  <script src="todo-1.js"></script>
+</body>
+
+</html>
