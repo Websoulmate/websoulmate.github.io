@@ -39,7 +39,9 @@
 	  left: 0;
 	  z-index: 9999;
 	  transition: .8s;
-	  
+	  padding: 1rem; /* Default padding for smaller screens */
+	  max-width: 100%;
+	  box-sizing: border-box;
   }
   
   .links-container {
@@ -171,13 +173,14 @@
 	background-color: var(--bg-color1);
 	height: 100vh;
 	width: 100vw;
-	padding-right: 2rem; 
+	padding: 2rem; 
   }
   
   .slider {
 	position: relative;
 	padding: 150px 10px 50px 10px;
-  
+	max-width: 100%;
+    box-sizing: border-box;
   }
   
   .slider-content {
@@ -190,7 +193,7 @@
   
   .slider-general {
 	flex: 0 0 auto;
-	width: min(600px, 100% - 4rem);
+	width: 48vw;
 	margin-inline: auto;
 	text-align: center;
   }
@@ -201,14 +204,8 @@
 	display: inline;
   }
   
-  .slider-general {
-	  width: min(600px, 100% - 4rem);
-	  margin-inline: auto;
-	  text-align: center;
-  }
-  
   .slider-general p {
-	max-width: 45vw;
+	max-width: 50vw;
 	line-height: 30px;
 	font-size: 1.3rem;
 	display: inline-block;
@@ -286,20 +283,25 @@
   }
   
   #projects {
-	  /* background-image: url(design/dark-laptop.jpg);
-	  background-repeat: no-repeat;
-	  background-position: center;
-	  background-size: cover; */
 	  background: linear-gradient(180deg, black, white);
 	  height: 100vh;
 	  width: 100vw;
 	  display: flex;
 	  flex-wrap: wrap;
 	  margin: 0;
-	  padding: 0;
-	  /* padding-right: 2rem;  */
+	  padding: 1rem; /* Default padding for smaller screens */
+	  max-width: 100%;
+	  box-sizing: border-box;
 	}
   
+	.project-heading {
+		display: flex;
+		width: 100vw;
+		height: 2rem;
+		margin-top: 8rem;
+		font-size: 1.5rem;
+		justify-content: center;
+	}
 	.project-container{
 	  flex: 1 1 50%; /* grow, shrink, basis */
 	  box-sizing: border-box;
@@ -735,7 +737,7 @@
 	}
   
 	.slider-content {
-	  margin-top: -5rem;
+	  margin-top: -6rem;
 	  margin-left: -15px;
 	  margin-right: -15px;
 	  padding: 0 30px;
@@ -743,14 +745,24 @@
   
 	.slider-image {
 	  margin-top: 0;
-	  width: 100%;
+	  min-width: 80%;
+	  margin-inline: auto;
 	  order: 1;
 	}
   
+	.about > p{
+		margin-top: 1rem;
+		min-width: 90%;
+		text-align: center;
+		margin-inline: auto;
+	}
+
 	.slider-general {
-	  margin-top: .5rem;
-	  width: 100%;
 	  order: 2;
+	  margin-top: 1.5rem;
+	  width: min(500px, 100% - .5rem);
+	  text-align: center;
+	  margin-inline: auto;
 	}
 	
 	.project-container {
@@ -766,7 +778,7 @@
   @media (min-width: 651px) and (max-width: 768px) {
   
   .slider-general {
-	  width: min(350px, 100%);
+	  width: min(340px, 100%);
 	  margin-inline: auto;
 	  text-align: center;
 	  margin-top: .5rem;
@@ -775,34 +787,30 @@
   
   /* Styles for desktops */
   @media (min-width: 769px) and (max-width: 992px) {
-  
-	  .slider-general {
-		  width: min(400px, 100%);
-		  margin-inline: auto;
-		  text-align: center;
+	
+	  .project-container, 
+	  .links-container{
+		 margin-left: 1.rem;
+		 margin-right: 1.rem;
 	  }
 	}
 	
   /* Styles for large desktops */
   @media (min-width: 993px) and (max-width: 1200px){
-  
-  
-	  .slider-general {
-		  width: min(400px, 100%);
-		  margin-inline: auto;
-		  text-align: center;
+	  .slider, 
+	  .project-container, 
+	  .links-container{
+		 margin-left: 2.5rem;
+		 margin-right: 2.5rem;
 	  }
 	 }
   
 	 /* Styles for extra large desktops */
   @media (min-width: 1201px) {
-	  section {
-		  padding-inline: 8rem;
-	  }
-  
-	  .slider-general {
-		  width: min(500px, 100% - 4rem);
-		  margin-inline: auto;
-		  text-align: center;
-	  }
+	 .slider, 
+	 .project-container, 
+	 .links-container{
+		margin-left: 3.5rem;
+        margin-right: 3.5rem;
+	 }
   }

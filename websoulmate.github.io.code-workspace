@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "websoulmate.github.io",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
