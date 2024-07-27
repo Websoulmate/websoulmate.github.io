@@ -217,7 +217,7 @@
   @media (min-width: 651px) and (max-width: 768px) {
   
   .slider-general {
-	  width: min(340px, 100%);
+	  width: 340px;
 	  margin-inline: auto;
 	  text-align: center;
 	  margin-top: .5rem;
@@ -253,7 +253,7 @@
 	 }
   
 	 /* Styles for extra large desktops */
-  @media (min-width: 1201px) {
+  @media (min-width: 1201px) and (max-width: 1400px){
 	 .slider-content, 
 	 .project-container {
 		margin-left: 6rem;
@@ -265,3 +265,16 @@
 		padding-left: 6rem;
 	  }
   }
+
+  @media (min-width: 1401px) {
+	.slider-content, 
+	.project-container {
+	   margin-left: 7rem;
+	   margin-right: 7rem;
+	}
+
+	.links-container {
+	   padding-right: 7rem;
+	   padding-left: 7rem;
+	 }
+ }

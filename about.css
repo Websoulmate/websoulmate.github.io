@@ -9,14 +9,8 @@
 	padding: 2rem; 
   }
   
-  /* .slider {
-	position: relative;
-	padding: 150px 10px 50px 10px;
-	max-width: 100%;
-    box-sizing: border-box;
-  } */
-  
   .slider-content {
+	width: 100%;
 	align-items: center !important;
 	display: flex;
 	justify-content: space-between;
