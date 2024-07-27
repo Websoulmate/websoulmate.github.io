@@ -9,12 +9,12 @@
 	padding: 2rem; 
   }
   
-  .slider {
+  /* .slider {
 	position: relative;
 	padding: 150px 10px 50px 10px;
 	max-width: 100%;
     box-sizing: border-box;
-  }
+  } */
   
   .slider-content {
 	align-items: center !important;
@@ -65,8 +65,6 @@
   
   #element:hover {
 	color: red;
-	font-size: 2.7rem;
-	font-weight: 700;
   }
   
   

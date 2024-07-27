@@ -30,6 +30,7 @@
   
   nav {
 	  height: 60px;
+	  width: 100vw;
 	  display: flex;
 	  justify-content: flex-end;
 	  align-items: center;
@@ -39,7 +40,7 @@
 	  left: 0;
 	  z-index: 9999;
 	  transition: .8s;
-	  padding: 1rem; /* Default padding for smaller screens */
+	  padding: 1rem 0; 
 	  max-width: 100%;
 	  box-sizing: border-box;
   }
@@ -50,12 +51,9 @@
 	  display: flex;
 	  flex-direction: row;
 	  align-items: center;
-	  /* background-color: black;
-	  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
-	  opacity: 0.8; */
 	  backdrop-filter: blur(10px); 
 	  -webkit-backdrop-filter: blur(10px);  /*For Safari*/
-	  padding: 30px;
+	  padding: 30px 0;
   }
   
   
@@ -175,8 +173,6 @@
   
 	.slider-content {
 	  margin-top: -6rem;
-	  /* margin-left: -15px;
-	  margin-right: -15px; */
 	  padding: 0 30px;
 	}
   
@@ -208,7 +204,11 @@
 	}
 
 	.item .content {
-		margin-top: 20px;
+		margin-top: 20px; 
+		width: min(340px, 100%);
+		margin-inline: auto;
+		text-align: center;
+		margin-top: .5rem;
 	}
   
   }
@@ -226,30 +226,42 @@
   
   /* Styles for desktops */
   @media (min-width: 769px) and (max-width: 992px) {
-	
-	  .project-container, 
-	  .links-container{
-		 margin-left: 1.rem;
-		 margin-right: 1.rem;
+	  .slider-content, 
+	  .project-container {
+		 margin-left: 1rem;
+		 margin-right: 1rem;
+	  }
+
+	  .links-container {
+		padding-right: 2rem;
+		padding-left: 2rem;
 	  }
 	}
 	
   /* Styles for large desktops */
   @media (min-width: 993px) and (max-width: 1200px){
-	  .slider, 
-	  .project-container, 
-	  .links-container{
-		 margin-left: 2.5rem;
-		 margin-right: 2.5rem;
+	  .slider-content, 
+	  .project-container {
+		 margin-left: 3.5rem;
+		 margin-right: 3.5rem;
+	  }
+
+	  .links-container {
+		padding-right: 3.5rem;
+		padding-left: 3.5rem;
 	  }
 	 }
   
 	 /* Styles for extra large desktops */
   @media (min-width: 1201px) {
-	 .slider, 
-	 .project-container, 
-	 .links-container{
-		margin-left: 3.5rem;
-        margin-right: 3.5rem;
+	 .slider-content, 
+	 .project-container {
+		margin-left: 6rem;
+        margin-right: 6rem;
 	 }
+
+	 .links-container {
+		padding-right: 6rem;
+		padding-left: 6rem;
+	  }
   }

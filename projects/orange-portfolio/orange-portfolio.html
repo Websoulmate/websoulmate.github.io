@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio</title>
+  <link rel="stylesheet" href="orange-portfolio.css">
+</head>
+
+<body>
+  <header>
+    <div class="mob-view">
+      <div class="logo">
+        <img src="images-orange/logo.png" alt="logo">
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+    <nav class="navbar-links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#protofolio">Portofolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#hire">Hire Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="main">
+      <div class="left-section">
+        <h1>I'm <span class="name">Pasang</span> Tamang</h1>
+        <p>This is my official portfolio website to showcase my all works related to web development and Graphics design.</p>
+      </div>
+      <div class="right-section">
+        <div class="back-style"></div>
+        <img src="images-orange/prf-pc.png" alt="Profile-Pic">
+      </div>
+    </div>
+    <footer>
+      <img src="images-orange/instagram.png" alt="Instagram">
+      <img src="images-orange/github.png" alt="Github">
+      <img src="images-orange/devchallenges.png" alt="Devchallenges">
+    </footer>
+  </section>
+
+  <script>
+    const hamburger = document.getElementsByClassName("hamburger")[0]
+    const navbarLinks = document.getElementsByClassName("navbar-links")[0]
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active')
+      navbarLinks.classList.toggle('active')
+    })
+  </script>
+
+</body>
+
+</html>

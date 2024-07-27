@@ -18,6 +18,7 @@
 		background: #f5f5f5;
 		box-shadow: 0 30px 50px #dbdbdb;
 	  }
+
 	  
 	  .project-container .slide .item {
 		width: 165px;
@@ -69,14 +70,12 @@
 	  
 	  .item .content {
 		position: absolute;
-		top: -80px;
-		left: 50px;
+		top: -90px;
+		/* left: 10px; */
 		width: 50vw;
 		padding: 10px;
 		text-align: center;
 		color: white;
-		/* backdrop-filter: blur(10px);
-		-webkit-backdrop-filter: blur(10px); */
 		transform: translate(0, -50%);
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 		display: none;
@@ -88,7 +87,7 @@
 	  
 	  .content .name {
 		margin-top: 20px;
-		font-size: 2vw;
+		font-size: 1.5rem;
 		text-transform: uppercase;
 		font-weight: 600;
 		opacity: 0;
@@ -96,7 +95,7 @@
 	  }
 	  
 	  .content .des {
-		font-size: 1.5vw;
+		font-size: 1rem;
 		margin-top: 10px;
 		margin-bottom: 20px;
 		opacity: 0;
@@ -104,7 +103,10 @@
 	  }
 	  
 	 .learn-more-button {
-		width: 20vw;
+		width: 200px;
+		margin-inline: auto;
+		text-align: center;
+		margin-top: .5rem;
 		padding: 10px 20px;
 		background: transparent; 
 		backdrop-filter: blur(10px);
@@ -118,8 +120,12 @@
 	
 	.learn-more-button  a {
 		color: black;
-		font-size: 1.5vw;
+		font-size: 2rem;
 		text-decoration: none;
+	  }
+
+	  .learn-more-button  a:hover {
+		color: white;
 	  }
 	  
 	  @keyframes animate {
