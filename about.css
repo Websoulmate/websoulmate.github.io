@@ -6,7 +6,6 @@
 	background-color: var(--bg-color1);
 	height: 100vh;
 	width: 100vw;
-	padding: 2rem; 
   }
   
   .slider-content {
@@ -16,6 +15,7 @@
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-inline: auto;
   }
   
   .slider-general {
@@ -67,7 +67,8 @@
   
   .slider-image {
 	flex: 0 0 auto;
-	width: 40%;
+	width: 35vw;
+	margin-right: auto;
   }
   
   .welcome-image img {

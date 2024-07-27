@@ -56,8 +56,6 @@
 	  padding: 30px 0;
   }
   
-  
-  
   nav #logo {
 	  color: orchid;
 	  font-weight: 600;
@@ -79,10 +77,10 @@
   }
   
   nav  a:hover {
-	  background-color: rgba(174, 14, 174, 0.6);
+	  color: rgba(255, 255, 255, 0.6);
   }
   
-  nav .home-link {
+  nav #logo {
 	  margin-right: auto;
   }
   
@@ -93,7 +91,7 @@
   #sidebar-active {
 	  display: none;
   }
-  
+
   .open-sidebar-button, .close-sidebar-button {
 	  display: none;
   }
@@ -106,7 +104,7 @@
   @media(max-width: 650px) {
 		  .links-container {
 			  flex-direction: column;
-			  align-items: flex-start;
+			  justify-content: flex-start;
 			  position: fixed;
 			  top: 0;
 			  right: -100%;
@@ -119,12 +117,8 @@
 			  -webkit-backdrop-filter: blur(10px); /* For Safari */
 			  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
 			  padding: 20px; /* Padding inside the element */
-			  /* background-color: var(--color-1);
-			  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25); */
 			  transition: 0.75s ease-out;
 		  }
-  
-  
   
 		  nav a{
 			  box-sizing: border-box;
@@ -140,15 +134,16 @@
 			  border-radius: 10px;
 		  }
   
+		  .open-sidebar-button,
 		  .close-sidebar-button {
-			  padding-left: 20px;
-			  display: block;
-	  }
-  
-		  .open-sidebar-button {
 			  padding: 20px;
 			  display: block;
 	  } 
+
+	  .close-sidebar-button {
+		margin-left: -170px;
+	  }
+
   
 		  #sidebar-active:checked ~ .links-container {
 			  right: 0;
@@ -217,7 +212,7 @@
   @media (min-width: 651px) and (max-width: 768px) {
   
   .slider-general {
-	  width: 340px;
+	  width: min(340px, 100%);
 	  margin-inline: auto;
 	  text-align: center;
 	  margin-top: .5rem;
