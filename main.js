@@ -3,7 +3,7 @@ const reviews = [
 	id: 1,
 	img: "./images/html.png",
 	title: "html",
-	desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quis placeat aspernatur cum nam adipisci, sint corporis excepturi eos sapiente eius necessitatibus in obcaecati ipsam laborum nisi odio quas distinctio fuga. Expedita, magnam consectetur!",
+	desc: "HTML (Hypertext Markup Language) is the standard markup language for creating web pages. 1  It uses tags to define the structure and content of a webpage, 2  including text, images, links, and other multimedia. 3  Browsers interpret HTML to display web pages visually.",
 
 	},
 
@@ -11,7 +11,7 @@ const reviews = [
 	id: 2,
 	img: "./images/css.png",
 	title: "css",
-	desc: "I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed . Expedita, magnam consectetur!",
+	desc: "CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation of HTML elements. It dictates the visual aspects of a webpage, such as colors, fonts, layout, and responsiveness across different devices. CSS separates content from design, making websites more maintainable.",
 
 	},
 
@@ -19,7 +19,7 @@ const reviews = [
 	id: 3,
 	img: "./images/js.png",
 	title: "javascript",
-	desc: "Lorem ivaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercatsnecessitatibus in obcaecati ipsam laborum nisi odio quas distinctio fuga. Expedita, magnam consectetur!",
+	desc: "JavaScript is a versatile scripting language that adds interactivity to web pages. It enables dynamic content updates, animations, user interface enhancements, and handling user input. JavaScript runs in web browsers (client-side) and also on servers (server-side) using Node.js, making it a full-stack technology.",
 
 	},
 
@@ -27,14 +27,21 @@ const reviews = [
 	id: 4,
 	img: "./images/tailwind-css.png",
 	title: "tailwind",
-	desc: "mbucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viralnecessitatibus in obcaecati ipsam laborum nisi odio quas distinctio fuga. Expedita, magnam consectetur!",
+	desc: "Tailwind CSS is a utility-first CSS framework. Instead of pre-designed components, it provides low-level utility classes like text-center, bg-blue-500, and p-4 to rapidly style HTML directly in your markup. This approach allows for highly customized designs without writing custom CSS.",
 
 	},
 	{
 	id: 5,
 	img: "./images/bootstrap.png",
 	title: "bootstrap",
-	desc: "Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut,s necessitatibus in obcaecati ipsam laborum nisi odio quas distinctio fuga. Expedita, magnam consectetur!",
+	desc: "Bootstrap is a popular front-end framework that simplifies web development. 1  It provides ready-made HTML, CSS, and JavaScript components, such as navigation bars, buttons, forms, and grids, enabling developers to quickly build responsive and mobile-first websites with a consistent look and feel.",
+
+	},
+	{
+	id: 6,
+	img: "./images/git.png",
+	title: "git/github",
+	desc: "Git is a distributed version control system that tracks changes in source code during software development. GitHub is a web-based platform that hosts Git repositories, enabling collaboration, code sharing, and version control management. Developers use Git locally and push changes to GitHub for collaboration and backup.",
 
 	},
 ];
