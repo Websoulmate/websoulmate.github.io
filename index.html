@@ -2,161 +2,185 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow" />
-  <meta name="description" content="I am a highly skiled Web Developer with a passion for creating beutiful and functional website. I have good skill of Graphics Design and Web Development. I'm also a creative thinker and I'm always looking for new ways to solve problems." />
- 
-   <title>Pasang Tamang</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow" />
+	<meta name="description"
+		content="I am a highly skiled Web Developer with a passion for creating beutiful and functional website. I have good skill of Graphics Design and Web Development. I'm also a creative thinker and I'm always looking for new ways to solve problems." />
 
-  <link rel="stylesheet" href="style.css">
+	<title>Pasang Tamang</title>
+
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-<button id="open-sidebar-button" onclick="openSidebar();" aria-label="open sidebar" aria-expanded="false"
-	aria-controls="navbar">
-<svg class="hamburger-menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-	<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-</svg>
-</button>
-<nav id="navbar">
-	<ul>
-		<li><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
-			<svg class="close-menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-				<path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+	<div class="head-nav">
+		<button id="open-sidebar-button" onclick="openSidebar();" aria-label="open sidebar" aria-expanded="false"
+			aria-controls="navbar">
+			<svg class="hamburger-menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+				width="24px" fill="#e8eaed">
+				<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
 			</svg>
-		</button></li>
-		<li class="home-li"><a class="active-link" aria-current="page" href="#home">Home</a></li>
-		<li><a href="#about">About</a></li>
-		<li><a href="#skill">Skill</a></li>
-		<li><a href="#resume">Resume</a></li>
-		<li><a href="#contact">Contact</a></li>
-	</ul>
-</nav>
-	
- <section id="home">	  
-    <span class="welcome-msg">
-      Welcome!
-    </span>
-    <h1 class="landing-title">Hello World!</h1>
-    <h3 class="landing-msg">Hire Me! <br>I'm talented Web Developer.</h3>
-</section>
+		</button>
+		<nav id="navbar" class="main-navbar">
+			<ul>
+				<li><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+						<svg class="close-menu" xmlns="http://www.w3.org/2000/svg" height="24px"
+							viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+							<path
+								d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+						</svg>
+					</button></li>
+				<li class="home-li"><a class="active-link" aria-current="page" href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skill">Skill</a></li>
+				<li><a href="#resume">Resume</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
 
-  <section id="about">
-    <div class="slider">
-		<div class="slider-text">
-			<h1>Hi, I'm </h1><span id="element"></span>
-			<div class="text-wrap">
-			<h2 class="hover-title">Pasang Tamang</h2>
-			</div>
-			<div class="about">
-			<p>I am a highly skiled Web Developer with a passion for creating beutiful and functional website. I have good skill of Graphics Design and Web Development. I'm also a creative thinker and I'm always looking for new ways to solve problems.</p>
+
+
+	<section id="home">
+		<div class="main-home main-container">
+			<span class="welcome-msg">
+				Welcome!
+			</span>
+			<h1 class="landing-title">Hello World!</h1>
+			<h3 class="landing-msg">Hire Me! <br>I'm talented Web Developer.</h3>
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="main-about main-container">
+			<div class="slider">
+				<div class="slider-text">
+					<h1>Hi, I'm </h1><span id="element"></span>
+					<div class="text-wrap">
+						<h2 class="hover-title">Pasang Tamang</h2>
+					</div>
+					<div class="about">
+						<p>I am a highly skiled Web Developer with a passion for creating beutiful and functional
+							website. I have good skill of Graphics Design and Web Development. I'm also a creative
+							thinker and I'm always looking for new ways to solve problems.</p>
+					</div>
+				</div>
+				<div class="slider-image">
+					<div class="welcome-image">
+						<img src="pasang.jpg" alt="">
+					</div>
+				</div>
 			</div>
 		</div>
-        <div class="slider-image">
-            <div class="welcome-image">
-              <img src="pasang.jpg" alt="">
-			</div>  
-        </div>
-    </div>
-  </section>
+	</section>
 
-  <section id="skill">
-	 <div class="skill-container">
-		 <h2 class="headline">M<span>y Ski</span>lls</h2>
-		<article class="review">
-			<img src=".//images/html.png" alt="html" class="lang">
-			<h4 class="title">html</h4>
-			<p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quis placeat aspernatur cum nam adipisci, sint corporis excepturi eos sapiente eius necessitatibus in obcaecati ipsam laborum nisi odio quas distinctio fuga. Expedita, magnam consectetur!</p>
-			<div class="button-container">
-				<svg class="prev-btn arrow-btn" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-					<path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
-				</svg>
-				<svg class="next-btn arrow-btn" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-					<path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
-				</svg>
+	<section id="skill">
+		<div class="main-skill main-container">
+			<div class="skill-container">
+				<h2 class="headline">M<span>y Ski</span>lls</h2>
+				<article class="review">
+					<img src=".//images/html.png" alt="html" class="lang">
+					<h4 class="title">html</h4>
+					<p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quis placeat
+						aspernatur cum nam adipisci, sint corporis excepturi eos sapiente eius necessitatibus in
+						obcaecati ipsam laborum nisi odio quas distinctio fuga. Expedita, magnam consectetur!</p>
+					<div class="button-container">
+						<svg class="prev-btn arrow-btn" xmlns="http://www.w3.org/2000/svg" height="24px"
+							viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+							<path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+						</svg>
+						<svg class="next-btn arrow-btn" xmlns="http://www.w3.org/2000/svg" height="24px"
+							viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+							<path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+						</svg>
+					</div>
+					<button class="random-btn">surprise me</button>
+				</article>
 			</div>
-			<button class="random-btn">surprise me</button>
-		</article>
-	</div>
-  </section>
+		</div>
+	</section>
 
-  <section id="resume">
-    <div class="download-resume">
-      <a href="Profile.pdf" download>Download CV</a>
-    </div>
-    <div class="area">
-      <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
-  </section>
+	<section id="resume">
 
-  <section id="contact">
-    <div class="portofolio-container">
-      <div class="text-wrap">
-        <h2 class="main-title">Stay Connected</h2>
-        <h2 class="hover-title">Stay Connected</h2>
-      </div>
-      <div class="contact-info">
-        <span>
-          Yarmuk, Riyadh, Kingdom of Saudi Arabia
-        </span>
-        <h3>pasutamang@gmail.com</h3>
-        <a href="#">+966 (057) 1017765</a>
-      </div>
-      <div class="social-link">
-        <ul>
-          <!-- <li>
-            <div class="social-box f">
-              <img src="/images/facebook.png" width="100%" height="100%" alt="Facebook" />
-              <a href="https://www.facebook.com/pasumax"><input type="button" value="Facebook" class="button-link"></a>
-            </div>
-          </li> -->
-          <li>
-            <div class="social-box x">
-              <img src="/images/x-twitter.png" width="100%" height="100%" alt="X" />
-              <a href="https://www.twitter.com/pasumax"><input type="button" value="X" class="button-link"></a>
-            </div>
-          </li>
-          <li>
-            <div class="social-box i">
-              <img src="/images/instagram.png" width="100%" height="100%" alt="Instagram" />
-              <a href="https://www.instagram.com/thepasumax">
-                <input type="button" value="Instagram" class="button-link"></a>
-            </div>
-          </li>
-          <li>
-            <div class="social-box l">
-              <img src="/images/linkedin.png" width="100%" height="100%" alt="LinkedIn" />
-              <a href="https://www.linkedin.com/in/pasumax">
-                <input type="button" value="LinkedIn" class="button-link"></a>
-            </div>
-          </li>
-          <li>
-            <div class="social-box g">
-              <img src="/images/github.png" width="100%" height="100%" alt="Github" />
-              <a href="https://www.github.com/websoulmate">
-                <input type="button" value="Github" class="button-link"></a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-	<p class="copyright">copyright &copy; Pasang Tamang
-	<span id="date"></span>. all rights reserved</p>
-  </section>
+		<div class="download-resume">
+			<a href="Profile.pdf" download>Download CV</a>
+		</div>
+		<div class="area">
+			<ul class="circles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="main-contact main-container">
+			<div class="portofolio-container">
+				<div class="text-wrap">
+					<h2 class="main-title">Stay Connected</h2>
+					<h2 class="hover-title">Stay Connected</h2>
+				</div>
+				<div class="contact-info">
+					<span>
+						Yarmuk, Riyadh, Kingdom of Saudi Arabia
+					</span>
+					<h3>pasutamang@gmail.com</h3>
+					<a href="#">+966 (057) 1017765</a>
+				</div>
+				<div class="social-link">
+					<ul>
+						<!-- <li>
+				<div class="social-box f">
+				  <img src="/images/facebook.png" width="100%" height="100%" alt="Facebook" />
+				  <a href="https://www.facebook.com/pasumax"><input type="button" value="Facebook" class="button-link"></a>
+				</div>
+			  </li> -->
+						<li>
+							<div class="social-box x">
+								<img src="/images/x-twitter.png" width="100%" height="100%" alt="X" />
+								<a href="https://www.twitter.com/pasumax"><input type="button" value="X"
+										class="button-link"></a>
+							</div>
+						</li>
+						<li>
+							<div class="social-box i">
+								<img src="/images/instagram.png" width="100%" height="100%" alt="Instagram" />
+								<a href="https://www.instagram.com/thepasumax">
+									<input type="button" value="Instagram" class="button-link"></a>
+							</div>
+						</li>
+						<li>
+							<div class="social-box l">
+								<img src="/images/linkedin.png" width="100%" height="100%" alt="LinkedIn" />
+								<a href="https://www.linkedin.com/in/pasumax">
+									<input type="button" value="LinkedIn" class="button-link"></a>
+							</div>
+						</li>
+						<li>
+							<div class="social-box g">
+								<img src="/images/github.png" width="100%" height="100%" alt="Github" />
+								<a href="https://www.github.com/websoulmate">
+									<input type="button" value="Github" class="button-link"></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<p class="copyright">copyright &copy; Pasang Tamang
+				<span id="date"></span>. all rights reserved
+			</p>
+		</div>
+	</section>
 
 
 	<a href="#home">
@@ -165,13 +189,13 @@
 				d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z" />
 		</svg>
 	</a>
-  
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <script>
-    var typed = new Typed('#element', { strings: ['Pasang Tamang.'], typeSpeed: 60, });
-  </script>
 
-  <script src="main.js"></script>
+	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+	<script>
+		var typed = new Typed('#element', { strings: ['Pasang Tamang.'], typeSpeed: 60, });
+	</script>
+
+	<script src="main.js"></script>
 </body>
 
 </html>
