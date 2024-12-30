@@ -1,2 +1,2 @@
 # websoulmate.github.io
-This is a my (Pasang Tamang) personal profile. I am beginner in Web development. I am learning and it will be continue till life time. 
+This is a my (Pasang Tamang) personal profile. I am beginner in Web development. Let's make awesome web and web aplication. 
