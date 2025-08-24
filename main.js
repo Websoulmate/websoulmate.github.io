@@ -23,7 +23,7 @@ const reviews = [
     id: 4,
     img: "./images/react.svg",
     title: "react",
-    desc: "React.js is a popular JavaScript library for building user interfaces, developed by Facebook. It uses a component-based approach, making code reusable and easier to maintain. With its virtual DOM, React efficiently updates only the necessary parts of a webpage, enabling fast performance. It’s widely used for modern web applications.",
+    desc: "React.js is a popular JavaScript library for building user interfaces, developed by Facebook. It uses a component-based approach, making code reusable and easier to maintain. With its virtual DOM, React efficiently updates only the necessary parts of a webpage, enabling fast performance. It's widely used for modern web applications.",
   },
 
   {
